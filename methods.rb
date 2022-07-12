@@ -1,3 +1,8 @@
+require "pry"
+
+
+
+
 # Your code here!
 def greet_programmer
     puts "Hello, programmer!"
@@ -22,10 +27,11 @@ end
 
 
  def halve(number)
-    if number.class != "number"
-        return nil
+    if number.class == Integer
+        number /2
+    else 
+    nil
     end
-    return number /2
  end
 
 
